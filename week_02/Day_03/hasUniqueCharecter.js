@@ -20,31 +20,8 @@ hasUniqueChars("Bob")
 // returns true */
 
 function hasUniqueChars(str) {
-    
-    for (let i = 0; i< str.length; i++) {
-        for (let j= i+1; j < str.length; j++) {
-            if (str[i] == str[j]) {
-                return false;
-                
-            } else{
-                return false;
-            }
-            
-            
-        }
-        
-        
-    }
-    
-    
-}
-
-console.log(hasUniqueChars("moonday"));
-
-
-function hasUniqueChars2(str) {
     let setString = new Set(str)
-    if (setString.size===str.length) {
+    if (setString.size===str.length ) {
         return true;
         
     } else {
@@ -53,5 +30,13 @@ function hasUniqueChars2(str) {
     }
     
 }
+console.log(hasUniqueChars('Monday'));
+console.log(hasUniqueChars('Moonday'));
+console.log(hasUniqueChars('Bob'));
 
-console.log(hasUniqueChars2("moonday"));
+
+
+
+
+
+
