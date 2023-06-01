@@ -1,0 +1,121 @@
+SQL Basics
+Instructions
+In this project you will be practicing inserting and querying data using SQL. You’ll make use of a handy online tool provided by Devmountain that will allow you to write SQL in your browser.
+
+Go to https://postgres.devmountain.com/
+
+On the left are the tables with their fields, the right is where you will be writing our queries, and the bottom is where you will see our results.
+
+Any new tables or records that you add into the database will be removed after you refresh the page.
+
+Step 1: Setup
+Create a folder called ‘sql-basics’
+
+Run git init
+
+Create 5 files: person.sql, orders.sql, artist.sql, employee.sql, and invoice.sql
+
+Run git add and git commit (don’t forget the m flag and a message)
+
+Create a repo on GitHub and connect it to your local repo
+
+Step 2: person table
+In the person.sql file, write out the code for the following problems:
+
+Create a table called person that records a person’s id, name, age, height (in cm , city, favorite_color. id should be an auto-incrementing id/primary key (use type: SERIAL)
+
+Add 5 different people into the person database. Remember to not include the person_id because it should auto-increment.
+
+Select all the people in the person table by height from tallest to shortest.
+
+Select all the people in the person table by height from shortest to tallest.
+
+Select all the people in the person table by age from oldest to youngest.
+
+Select all the people in the person table older than age 20.
+
+Select all the people in the person table that are exactly 18.
+
+Select all the people in the person table that are less than 20 and older than 30.
+
+Select all the people in the person table that are not 27 (use not equals).
+
+Select all the people in the person table where their favorite color is not red.
+
+Select all the people in the person table where their favorite color is not red and is not blue.
+
+Select all the people in the person table where their favorite color is orange or green.
+
+Select all the people in the person table where their favorite color is orange, green or blue (use IN).
+
+Select all the people in the person table where their favorite color is yellow or purple (use IN).
+
+Step 3: orders table
+In the orders.sql file, write out the code for the following problems:
+
+Create a table called orders that records: order_id, person_id, product_name, product_price, quantity.
+
+Add 5 orders to the orders table.
+Make orders for at least two different people.
+
+person_id should be different for different people.
+
+Select all the records from the orders table.
+
+Calculate the total number of products ordered.
+
+Calculate the total order price.
+
+Calculate the total order price by a single person_id.
+
+Step 4: artist table
+In the artist.sql file, write out the code for the following problems:
+
+Add 3 new artists to the artist table. (It already exists.)
+
+Select 10 artists in reverse alphabetical order.
+
+Select 5 artists in alphabetical order.
+
+Select all artists that start with the word ‘Black’.
+
+Select all artists that contain the word ‘Black’.
+
+Step 5: employee table
+In the employee.sql file, write out the code for the following problems:
+
+List all employee first and last names only that live in Calgary.
+
+Find the birthdate for the youngest employee.
+
+Find the birthdate for the oldest employee.
+
+Find everyone that reports to Nancy Edwards (use the ReportsTo column). * You will need to query the employee table to find the id for Nancy Edwards
+
+Count how many people live in Lethbridge.
+
+Step 6: invoice table
+In the invoice.sql file, write out the code for the following problems:
+
+Count how many orders were made from the USA.
+
+Find the largest order total amount.
+
+Find the smallest order total amount.
+
+Find all orders bigger than $5.
+
+Count how many orders were smaller than $5.
+
+Count how many orders were in CA, TX, or AZ (use IN).
+
+Get the average total of the orders.
+
+Get the total sum of the orders.
+
+Update the invoice with an invoice_id of 5 to have a total order amount of 24.
+
+Delete the invoice with an invoice_id of 1.
+
+Step 7: Push to GitHub
+When you have completed the questions, add, commit, and push your work to GitHub.

@@ -1,0 +1,47 @@
+RECIPE APP
+
+BRAINSTORMING
+
+-Brainstroaming:
+
+-user can sign in to the app with their email and password
+-user have profile
+-user can create/update/delete their profile
+-users can create/edit/delete post
+-users can follow each other
+-users can comment on post
+-user can block user
+-user can join/create groups
+-user can create post within the group
+-user can send meassage to each other
+-user can search a post
+
+TABLES
+-UserID
+-recipe
+-recipe list
+-comment
+-occassion
+-occassion recipe
+-follow recipe
+
+
+Relation ship
+
+Relationships:
+
+One to One:
+User to Auth
+
+One to Many:
+User to recipe
+occassion  to group occassion recipe
+
+
+Many to Many(2 One to many):
+User to Comment, Post to comment(User to Post)
+Follows/Friends(Association table)(recipe to User)
+user to comment(middle table)(User to User)
+User to occassion(association table/middle table)
+
+

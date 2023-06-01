@@ -1,0 +1,73 @@
+
+
+https://docs.google.com/document/d/1KNWsF636DDRGH1BRzvpRUpeJAphxnoCFSAmSAg0n79I/edit
+
+
+DB Planning:
+
+Normalization: one piece of info lives in one place only.
+Relationships: one to many, one to one & many to many(2 one to many relationships)
+
+Social Media APP
+
+Brainstorming:
+Users can sign into the app with their email and password
+Users can create/update/delete a profile
+Users can create an account
+Users can create/edit/delete posts
+Users can follow/add-friend each other
+Users can comment on posts
+Users can update credentials
+Users can block other users
+Users can join/create groups
+Users can create posts in the group
+Users can send messages to each other
+Users can search for post
+
+Table Ideas:
+User: will hold info about the user, each line/row will be an individual user.
+Auth: will hold credentials for logging-in, each line/row will be an individual credential.
+Post: will hold info about posts, each line/row will be an individual post.
+Comment:will hold info about comment, each line/row will be an individual comment.
+Follows/Friends: will hold info about who follows who, each line/row will be an individual connection
+Message: will hold info about message, each line/row will be an individual message
+Group:will hold info about the group, each line/row will be an individual group
+Group posts: will hold all the posts made in a group, each line/row will be an individual group post
+BlockUser:will hold info about who blocked whom, each line/row will be an individual block
+
+Relationships:
+
+One to One:
+User to Auth
+
+One to Many:
+User to Post
+Group to group posts
+
+
+Many to Many(2 One to many):
+User to Comment, Post to comment(User to Posts)
+Follows/Friends(Association table)(User to User)
+Message(middle table)(User to User)
+User to groups(association table/middle table)
+Blocked(user to user)(association table)
+
+
+                                                     
+            					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
